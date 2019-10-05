@@ -1,7 +1,7 @@
 # multi-split-flap
 Branch from Split Flap project, including original arduino code and modified wrapper script. This is designed to help facilitate the use of multiple arduino mc's to act as one large unit
 
-<h1>**Usage**</h1>
+<h1>Usage</h1>
 
 Before running the main.py script to initialise the split-flap application, all Arduino/Arduino-like modules need to be registered using the arduinoregistration.py script.
 
@@ -45,7 +45,7 @@ In a 2 x 7 grind, you will have space for 14 indexes, with index 1 being the top
 
 To register an arduino, ensure that the device is plugged into the controller (as Raspberry PI or PC) and then choose a free index slot on the grid. This will allow the main.py script to know where to send each piece of text
 
-<h1>**MAIN SCRIPT**</h1>
+<h1>MAIN SCRIPT</h1>
 
 The main script usage is defined as follows:
 
@@ -87,9 +87,7 @@ Sensor Error - Arduno no.1 - Sensor no.2 - missed_home 1 - unexpected_home 0 ---
 
 At the beginning of each initialisation, all sensors will report back to the script if there is any error status:
 
-=======================================
 Arduino Index - 2 - sensor_error
 Sensor Number - 3
-=======================================
 
 This means Arduino at index 2, sensor number 3, is having a fault initialising. This would almost always be a hardware error, so hardware troubleshooting would be required until the sensor is working optimaly.
