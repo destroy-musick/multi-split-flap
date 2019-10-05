@@ -26,10 +26,10 @@ def run():
     ports = get_ports()
 
     print('Starting...')
-
+    
+    err_count = 0
     # Mark all arduino ports which cannot be read or initialised.
-    for port in ports:
-        err_count = 0
+    for port in ports:        
         try:
             sensors = port['Splitflap'].loop_for_status()
             print(sensors)
