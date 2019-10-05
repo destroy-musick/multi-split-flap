@@ -3,7 +3,7 @@ Branch from Split Flap project, including original arduino code and modified wra
 
 <h1>Usage</h1>
 
-Before running the main.py script to initialise the split-flap application, all Arduino/Arduino-like modules need to be registered using the arduinoregistration.py script.
+Before running the main.py script to initialise the split-flap application, all Arduino/Arduino-like modules need to be registered using the arduinoregistration.py script. This requires **python3** to run
 
 **PREPARING ARDUINO**
 
@@ -91,3 +91,5 @@ Arduino Index - 2 - sensor_error
 Sensor Number - 3
 
 This means Arduino at index 2, sensor number 3, is having a fault initialising. This would almost always be a hardware error, so hardware troubleshooting would be required until the sensor is working optimaly.
+
+If the script is throwing unhandled or unexpected errors, please check you are running and executing the latest version of python. This requires python 3 to run
