@@ -49,7 +49,7 @@ To register an arduino, ensure that the device is plugged into the controller (a
 
 The main script usage is defined as follows:
 
-			'-m --manualinput : Manual Input Mode\n' \
+	    '-m --manualinput : Manual Input Mode\n' \
             '-s --script : Script mode, supply full path name of text file as script file\n' \
             '-t --time : In seconds. If not using manual input, the minimum time delay between text changes\n' \
             '-i --iterations : If using script mode, number of iterations to run the script. 0 or leave to set as indefinite\n' \
@@ -65,19 +65,19 @@ There are 3 modes of operation:
 
 The script cannot run without at least a listener folder being chosen. This folder is used to listen for any files and read its text contents. This text will then be consumed by the application, removed and each line processed across the split-flap installation. This is the default option if no other argument is set.
 
-Example: python main.py -l C:\Users\Admin\Documents\GitHub\multi-split-flap\software\listener_input --- This script will look in the listener_input folder indefinitely for text files to consume, and iterate every 5 seconds
+Example: python3 main.py -l C:\Users\Admin\Documents\GitHub\multi-split-flap\software\listener_input --- This script will look in the listener_input folder indefinitely for text files to consume, and iterate every 5 seconds
 
 **Script**
 
 This mode is defined when the full path name of a single file is chosen. This script will be read line by line, with an interval (-t) between each line in seconds. If no interval is chosen, it will default to 5 seconds.
 
-Example: python main.py -s C:\Users\Admin\Documents\GitHub\multi-split-flap\software\example_script.txt -t 2 --- This will run the script in script mode interval through each line in the file every 2 seconds indefinitely
+Example: python3 main.py -s C:\Users\Admin\Documents\GitHub\multi-split-flap\software\example_script.txt -t 2 --- This will run the script in script mode interval through each line in the file every 2 seconds indefinitely
 
 **Manual Input**
 
 This mode will initialise the modules and then wait for user input before running
 
-Example: python main.py -m
+Example: python3 main.py -m
 
 **Troubleshooting**
 
