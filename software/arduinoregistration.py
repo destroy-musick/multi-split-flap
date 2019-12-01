@@ -88,7 +88,7 @@ def arduino_registration():
             arduino_registration()
         else:
             print('Please choose a position index')
-            positionindex = int(input())
+            position_index = int(input())
             if any(d['position_index'] == position_index for d in data['arduinos']):
                 print('Index already taken')
                 arduino_registration()
