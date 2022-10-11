@@ -17,7 +17,7 @@ For example:
 
 557353231363512011C1 is registered to index position 1
 
-In a 2 x 7 grind, you will have space for 14 indexes, with index 1 being the top left, reading left to right. The script can also swap out indexes and can display the grid as defined in the config: 
+In a 2 x 7 grid, you will have space for 14 indexes, with index 1 being the top left, reading left to right. The script can also swap out indexes and can display the grid as defined in the config: 
 
                 ________________________________________________________________________________
                 |                                        |                                        |
